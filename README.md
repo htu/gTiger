@@ -1,4 +1,3 @@
-
 # My Package
 
 My Package is a Python package that does something useful.
@@ -9,8 +8,9 @@ To install My Package, use pip:
 
 ```bash
 pip install gTiger
+```
 
-# Usage
+## Usage
 
 Here's an example of how to use My Package:
 
@@ -19,6 +19,7 @@ from mypackage import myfunction
 
 result = myfunction(42)
 print(result)
+```
 
 # Contributing
 If you'd like to contribute to My Package, please follow these steps:
@@ -42,7 +43,7 @@ Here's what's going on in this README:
 - The "License" section specifies the license for the project and includes a link to the license file.
 
 You can customize this README to match your project's structure, features, and licensing requirements.
-
+```
 
 # Development History
 
