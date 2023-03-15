@@ -8,7 +8,6 @@
 from shutil import rmtree
 from pathlib import Path
 from shutil import move
-from utils.comm import echo_msg, get_abs_path
 # import argparse
 import sys
 import re
@@ -31,9 +30,9 @@ def echo_msg(prg, step, msg, lvl=0, fn=None):
     fmt = "%s: %.1f - %s\n"
     f1 = "<h2>%s</h2>"
     f2 = '<font color="%s">%s</font>'
-    g_lvl = os.getenv("g_lvl")  # message level
-    d_lvl = os.getenv("d_lvl")  # debug level
-    logfn = os.getenv("log_fn")  # log file name
+    g_lvl = os.getenv("g_lvl")      # message level
+    d_lvl = os.getenv("d_lvl")      # debug level
+    logfn = os.getenv("log_fn")     # log file name
     wrt2log = os.getenv("write2log")
     query_str = os.getenv("QUERY_STRING")
     http_host = os.getenv("HTTP_HOST")
@@ -42,7 +41,7 @@ def echo_msg(prg, step, msg, lvl=0, fn=None):
     g_lvl = int(g_lvl) if g_lvl else 1
     d_lvl = int(d_lvl) if d_lvl else 1
     ofn = fn if fn else logfn
-    if not msg:
+    if not msg or msg is None:
         return
 
     # hide passwords
@@ -95,7 +94,7 @@ def is_empty(x):
 
 
 
-def format_number(self, n, t=None):
+def format_number(n, t=None):
     # n - number
     # t - type: size or time
 

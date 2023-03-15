@@ -4,6 +4,9 @@
 #   03/14/2023 (htu) - initial coding
 #   03/15/2023 (htu) - tested out:
 
+from .comm import echo_msg, get_abs_path 
+import os 
+import sys 
 
 def start_app(app_name="showenv", n=1, pkg="comFuncs", pt=None, lb=None, ht="127.0.0.1", dm="normal", msg_lvl=None, loc='local'):
     prg = "start_app"
@@ -43,7 +46,7 @@ def start_app(app_name="showenv", n=1, pkg="comFuncs", pt=None, lb=None, ht="127
         msg = "Start app from {}".format(appPath)
         echo_msg(prg, 1.2, msg, 1)
         shinyArgs = dict(port=pt, host=ht, launch_browser=lb, display_mode=dm)
-        shiny: : runApp(appPath, **shinyArgs)
+        # shiny.runApp(appPath, **shinyArgs)
 
 
 
