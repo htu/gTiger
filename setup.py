@@ -8,7 +8,7 @@ setup(
     author_email='hanming.tu@gmail.com',
     description='A collection of utils for geoTiger project',
     long_description='This project includes a collection of common functions and procedures',
-    url='https://github.com/yourusername/myproject',
+    url='https://github.com/htu/gTiger',
     packages=find_packages(),
     classifiers=[
         'Programming Language :: Python :: 3',
