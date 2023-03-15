@@ -8,7 +8,7 @@
 from shutil import rmtree
 from pathlib import Path
 from shutil import move
-from utils.com_utils import echo_msg, get_abs_path
+from utils.comm import echo_msg, get_abs_path
 # import argparse
 import sys
 import re
